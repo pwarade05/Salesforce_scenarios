@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Enter Account Name">
+
+        <lightning-record-edit-form object-api-name="Account">
+            <lightning-input-field field-name="Name" onchange={nameHandler}></lightning-input-field>
+
+            <lightning-button variant="success" label="Search" onclick={searchContactHandler}></lightning-button>
+        </lightning-record-edit-form>
+
+        <c-contact-child received-contact-list={conList}> </c-contact-child>
+
+    </lightning-card>
+    
+</template>
+

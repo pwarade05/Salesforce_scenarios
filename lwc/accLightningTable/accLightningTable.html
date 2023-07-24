@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Account Type Search">
+
+        You have selected = {selectedRecordsCount} Records
+        <lightning-record-edit-form object-api-name="Account">
+            <lightning-input-field field-name="Type" onchange={typeHandler}></lightning-input-field>    
+        </lightning-record-edit-form>
+
+        Total Records Founds = {totalRecord} &nbsp;
+        
+        
+        <template lwc:if={showTableFlag}>
+
+            <lightning-button icon-name="utility:delete" variant="destructive" label="Delete Record" title="Destructive action" onclick={deleteRecordHandler}></lightning-button>
+            
+            <lightning-datatable
+            key-field="Id"
+            data={accList}
+            columns={accColumns}
+            draft-values={draftvalues}
+            onrowselection={selectedRecordHandler}
+            >
+        </lightning-datatable>
+        </template>
+
+    </lightning-card>
+</template>

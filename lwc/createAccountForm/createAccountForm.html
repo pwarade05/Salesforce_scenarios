@@ -1,0 +1,47 @@
+<template>
+<lightning-card title="Create New Account">
+    <lightning-record-edit-form object-api-name="Account" onsubmit={successToastMessage}>
+        <div class="slds-grid"> <!--We use this syntax for divide form in two sections. This is the main div start-->
+            <div class="slds-col slds-size_ 1-of-2" style="width:300px"> <!--here is the 1st div start-->
+        <lightning-input-field field-name="Name"></lightning-input-field>
+        <lightning-input-field field-name="OwnerId"></lightning-input-field>
+        <lightning-input-field field-name="Rating"></lightning-input-field>
+        <lightning-input-field field-name="Site"></lightning-input-field>
+        <lightning-input-field field-name="Type"></lightning-input-field>
+        <lightning-input-field field-name="Industry"></lightning-input-field>
+        <lightning-input-field field-name="Active__c"></lightning-input-field>
+        <lightning-input-field field-name="Select_User__c"></lightning-input-field>
+        <lightning-input-field field-name="Subjects__c"></lightning-input-field>
+        <lightning-input-field field-name="AccountNumber"></lightning-input-field>
+        <lightning-input-field field-name="ParentId"></lightning-input-field>
+        <lightning-input-field field-name="Phone"></lightning-input-field>
+        <lightning-input-field field-name="AnnualRevenue"></lightning-input-field>
+        <lightning-input-field field-name="Sic"></lightning-input-field>
+        <lightning-input-field field-name="Website"></lightning-input-field>
+             </div><!--1st div ends here-->
+
+             <div class="slds-col slds-size_ 2-of-2" style="width:350px"><!--2nd div starts here-->
+        <lightning-input-field field-name="Fax"></lightning-input-field>
+        <lightning-input-field field-name="Ownership"></lightning-input-field>
+        <lightning-input-field field-name="TickerSymbol"></lightning-input-field>
+        <lightning-input-field field-name="NumberOfEmployees"></lightning-input-field>
+        <lightning-input-field field-name="BillingAddress"></lightning-input-field>
+        <lightning-input-field field-name="ShippingAddress"></lightning-input-field>
+        <lightning-input-field field-name="CustomerPriority__c"></lightning-input-field>
+        <lightning-input-field field-name="SLA__c"></lightning-input-field>
+        <lightning-input-field field-name="SLAExpirationDate__c"></lightning-input-field>
+        <lightning-input-field field-name="SLASerialNumber__c"></lightning-input-field>
+        <lightning-input-field field-name="NumberofLocations__c"></lightning-input-field>
+        <lightning-input-field field-name="UpsellOpportunity__c"></lightning-input-field>
+        <lightning-input-field field-name="CreatedById"></lightning-input-field>
+        <lightning-input-field field-name="LastModifiedById"></lightning-input-field>
+        <lightning-input-field field-name="Description"></lightning-input-field>
+            </div><!--2nd div ends here-->
+        </div><!--Maiin div ends here--> 
+        <lightning-button icon-name="utility:record_create" type="submit" variant="brand" label="Create Account"></lightning-button>
+         
+</lightning-record-edit-form>
+
+</lightning-card>
+
+</template>
