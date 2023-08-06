@@ -1,0 +1,13 @@
+<template>
+    <lightning-card  title="Applicant LMS Search ">
+
+    <lightning-record-edit-form object-api-name="Applicant__c">          
+        <lightning-input-field field-name="First_Name__c" onchange={appFirstNameHandler}></lightning-input-field>
+        <lightning-input-field field-name="Last_Name__c" onchange={appLastNameHandler} blur={searchAddressRecordsHandler}></lightning-input-field>
+        <lightning-button variant="brand" icon-name="utility:search" label="Search" onclick={searchAddressRecordsHandler}> </lightning-button>           
+    
+    </lightning-record-edit-form>
+
+ </lightning-card>
+
+</template>
